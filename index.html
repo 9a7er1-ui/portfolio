@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ملف إنجاز المعلم | عبدالله ناصر القرني</title>
+<meta name="description" content="ملف الإنجاز الإلكتروني للمعلم عبدالله ناصر عايض القرني، مدرسة ذي النورين لتحفيظ القرآن الكريم، إدارة تعليم جدة">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#0d3b33;
+    --green-2:#16564a;
+    --gold:#b08d3c;
+    --gold-soft:#e9dcb8;
+    --paper:#f6f8f5;
+    --card:#ffffff;
+    --ink:#1b2622;
+    --muted:#5d6b66;
+    --line:#dfe5e0;
+    --display:"Reem Kufi","Noto Naskh Arabic","Geeza Pro","Tahoma",sans-serif;
+    --body:"Noto Naskh Arabic","Geeza Pro","Tahoma",serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:64px}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;
+    padding-bottom:env(safe-area-inset-bottom,0px)}
+  a{color:var(--green-2)}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+  .wrap{max-width:860px;margin:0 auto;padding:0 18px}
+
+  /* ---------- الترويسة ---------- */
+  .hero{background:var(--green);color:#fff;position:relative;overflow:hidden;
+    padding:calc(44px + env(safe-area-inset-top,0px)) 0 48px;text-align:center}
+  .hero::before{content:"";position:absolute;inset:0;opacity:.09;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23e9dcb8' stroke-width='1'%3E%3Crect x='16' y='16' width='24' height='24'/%3E%3Crect x='16' y='16' width='24' height='24' transform='rotate(45 28 28)'/%3E%3C/g%3E%3C/svg%3E");}
+  .hero .wrap{position:relative}
+  .kicker{font-family:var(--display);color:var(--gold-soft);font-size:1rem;margin:0 0 18px}
+  .cartouche{display:inline-block;position:relative;padding:22px 34px;border:1px solid var(--gold);max-width:100%}
+  .cartouche::before{content:"";position:absolute;inset:6px;border:1px solid rgba(233,220,184,.45);pointer-events:none}
+  .cartouche .star{position:absolute;top:50%;width:26px;height:26px;margin-top:-13px;background:var(--green);color:var(--gold)}
+  .cartouche .star.r{right:-14px}.cartouche .star.l{left:-14px}
+  .hero h1{font-family:var(--display);font-weight:700;font-size:clamp(1.7rem,6vw,2.7rem);line-height:1.4;margin:0}
+  .role{font-size:1.15rem;margin:22px 0 4px;color:#fff}
+  .school{margin:0;color:var(--gold-soft);font-size:1rem}
+
+  /* ---------- التنقل ---------- */
+  nav.top{position:sticky;top:0;z-index:20;background:rgba(246,248,245,.96);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+  nav.top ul{list-style:none;margin:0 auto;padding:0 10px;display:flex;gap:4px;overflow-x:auto;max-width:860px;
+    scrollbar-width:none}
+  nav.top ul::-webkit-scrollbar{display:none}
+  nav.top a{display:block;white-space:nowrap;padding:14px 12px;text-decoration:none;color:var(--green);font-weight:600;font-size:.95rem}
+  nav.top a:hover{color:var(--gold)}
+
+  /* ---------- عناوين الأقسام بطراز ترويسة السورة ---------- */
+  section{padding:46px 0 10px}
+  .band{display:flex;align-items:center;gap:12px;margin:0 0 22px}
+  .band::before,.band::after{content:"";flex:1;height:7px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+  .band h2{font-family:var(--display);font-weight:700;color:var(--green);font-size:clamp(1.3rem,4.6vw,1.65rem);margin:0;
+    padding:4px 18px;border:1px solid var(--gold);background:var(--card);text-align:center}
+  .lead{color:var(--muted);text-align:center;margin:-8px auto 22px;max-width:60ch}
+
+  /* ---------- السيرة الذاتية ---------- */
+  .bio{background:var(--card);border:1px solid var(--line);border-right:4px solid var(--gold);padding:18px 20px;margin:0 0 18px}
+  .bio p{margin:0}
+  dl.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;margin:0 0 18px;
+    background:var(--card);border:1px solid var(--line)}
+  .facts div{padding:12px 18px;border-bottom:1px solid var(--line)}
+  .facts dt{color:var(--muted);font-size:.88rem}
+  .facts dd{margin:0;font-weight:700}
+  .subjects{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 0;padding:0;list-style:none}
+  .subjects li{border:1px solid var(--gold);color:var(--green);padding:2px 12px;font-size:.92rem;font-weight:600;background:#fffdf7}
+  h3{font-family:var(--display);color:var(--green);font-size:1.15rem;margin:22px 0 10px}
+
+  /* ---------- عناصر الأداء ---------- */
+  .elements{display:flex;flex-direction:column;gap:10px}
+  details.el{background:var(--card);border:1px solid var(--line)}
+  details.el[open]{border-color:var(--gold)}
+  details.el summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:12px 14px}
+  details.el summary::-webkit-details-marker{display:none}
+  .marker{position:relative;flex:0 0 46px;height:46px;color:var(--gold)}
+  .marker svg{width:100%;height:100%}
+  .marker b{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);color:var(--green);font-size:1.05rem}
+  .el-title{flex:1;font-weight:700;line-height:1.5}
+  .count{flex:0 0 auto;font-size:.85rem;color:var(--muted);white-space:nowrap}
+  .chev{flex:0 0 auto;width:12px;height:12px;border-left:2px solid var(--green);border-bottom:2px solid var(--green);
+    transform:rotate(-45deg);transition:transform .2s}
+  details[open] .chev{transform:rotate(135deg)}
+  .el-body{padding:4px 16px 16px;border-top:1px dashed var(--line)}
+  .hint{font-size:.9rem;color:var(--muted);background:#f3f6f2;padding:8px 12px;margin:12px 0 0}
+
+  /* ---------- قوائم الشواهد ---------- */
+  ul.ev{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+  ul.ev a{display:flex;align-items:center;gap:12px;padding:10px;border:1px solid var(--line);background:#fff;
+    text-decoration:none;color:var(--ink);height:100%}
+  ul.ev a:hover{border-color:var(--gold)}
+  .thumb{flex:0 0 56px;height:56px;background:#eef2ee;display:grid;place-items:center;overflow:hidden;
+    font-family:var(--display);font-size:.78rem;color:var(--green);border:1px solid var(--line)}
+  .thumb img{width:100%;height:100%;object-fit:cover}
+  .ev-name{font-size:.95rem;line-height:1.5;word-break:break-word}
+  .empty{color:var(--muted);font-size:.95rem;margin:12px 0 0}
+  .status{color:var(--muted);font-size:.95rem;margin:12px 0 0}
+  .subject-block{background:var(--card);border:1px solid var(--line);padding:4px 16px 16px;margin:0 0 12px}
+
+  /* ---------- أزرار المعلم ---------- */
+  .tools{display:none;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+  body.admin .tools{display:flex}
+  body.admin .hint{display:block}
+  .hint{display:none}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px 16px;font:inherit;font-size:.95rem;
+    font-weight:700;text-decoration:none;border:1px solid var(--green);background:var(--green);color:#fff;cursor:pointer;min-height:44px}
+  .btn.ghost{background:#fff;color:var(--green)}
+  .btn.gold{background:var(--gold);border-color:var(--gold)}
+  .privacy{display:none;border:1px solid #d8b75e;background:#fff8e3;padding:12px 16px;margin:0 0 16px;font-size:.95rem}
+  body.admin .privacy{display:block}
+
+  .adminbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:30;background:var(--green);color:#fff;
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -2px 10px rgba(0,0,0,.15)}
+  body.admin .adminbar{display:block}
+  body.admin{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+  .adminbar .in{max-width:860px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+  .adminbar p{margin:0;flex:1 1 220px;font-size:.92rem;line-height:1.6}
+  .adminbar .btn{background:#fff;color:var(--green);border-color:#fff;min-height:40px;padding:6px 14px}
+  .adminbar .btn.ghost{background:transparent;color:#fff}
+
+  /* ---------- المشاركة ---------- */
+  .share{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center;background:var(--card);
+    border:1px solid var(--line);padding:24px}
+  #qr{padding:10px;background:#fff;border:1px solid var(--gold)}
+  #qr img,#qr canvas{display:block;width:180px;height:180px}
+  .share-text{max-width:340px;text-align:center}
+  .share-text p{margin:0 0 12px}
+  .url{direction:ltr;font-family:"Courier New",monospace;font-size:.9rem;color:var(--green);word-break:break-all}
+  footer{text-align:center;color:var(--muted);font-size:.85rem;padding:36px 0 30px}
+
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chev{transition:none}}
+  @media print{nav.top,.adminbar,.tools,.privacy,.hint{display:none!important}details.el{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">ملف إنجاز المعلم</p>
+    <div class="cartouche">
+      <svg class="star r" viewBox="0 0 26 26" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3"><rect x="6" y="6" width="14" height="14"/><rect x="6" y="6" width="14" height="14" transform="rotate(45 13 13)"/></g></svg>
+      <h1>عبدالله ناصر عايض القرني</h1>
+      <svg class="star l" viewBox="0 0 26 26" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3"><rect x="6" y="6" width="14" height="14"/><rect x="6" y="6" width="14" height="14" transform="rotate(45 13 13)"/></g></svg>
+    </div>
+    <p class="role">معلم القرآن الكريم والدراسات الإسلامية</p>
+    <p class="school">مدرسة ذي النورين لتحفيظ القرآن الكريم<br>إدارة تعليم جدة</p>
+  </div>
+</header>
+
+<nav class="top" aria-label="أقسام الملف">
+  <ul>
+    <li><a href="#cv">السيرة الذاتية</a></li>
+    <li><a href="#elements">عناصر الأداء الوظيفي</a></li>
+    <li><a href="#materials">المواد وأوراق العمل</a></li>
+    <li><a href="#certificates">الشهادات والدورات</a></li>
+    <li><a href="#share">رمز الملف</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+
+  <!-- السيرة الذاتية -->
+  <section id="cv">
+    <div class="band"><h2>البيانات والسيرة الذاتية</h2></div>
+    <div class="bio">
+      <p>معلم في المرحلة المتوسطة بمدرسة ذي النورين لتحفيظ القرآن الكريم، متخصص في القراءات، أمضى ثلاثاً وعشرين سنة في تعليم كتاب الله تلاوةً وتجويداً، وتدريس الدراسات الإسلامية والمهارات الحياتية.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>الاسم</dt><dd>عبدالله ناصر عايض القرني</dd></div>
+      <div><dt>المؤهل العلمي</dt><dd>بكالوريوس قراءات</dd></div>
+      <div><dt>سنوات الخبرة</dt><dd>٢٣ سنة</dd></div>
+      <div><dt>المرحلة</dt><dd>المتوسطة</dd></div>
+      <div><dt>المدرسة</dt><dd>مدرسة ذي النورين لتحفيظ القرآن الكريم</dd></div>
+      <div><dt>إدارة التعليم</dt><dd>إدارة تعليم جدة</dd></div>
+    </dl>
+    <h3>المواد التي أدرّسها</h3>
+    <ul class="subjects">
+      <li>القرآن الكريم</li><li>الدراسات الإسلامية</li><li>التجويد</li><li>المهارات الحياتية</li>
+    </ul>
+    <h3>ملف السيرة الذاتية</h3>
+    <div class="files" data-folder="cv" data-title="السيرة الذاتية"></div>
+  </section>
+
+  <!-- عناصر الأداء -->
+  <section id="elements">
+    <div class="band"><h2>عناصر تقييم الأداء الوظيفي</h2></div>
+    <p class="lead" id="elements-lead">اضغط على أي عنصر لعرض شواهده.</p>
+    <div class="privacy">تذكير قبل الرفع: الموقع عام يراه كل من يملك الرابط. لا ترفع صوراً تظهر فيها وجوه الطلاب أو أسماؤهم أو درجاتهم، وغطِّ الأسماء في الكشوف أو اكتفِ بالرسوم البيانية والنسب.</div>
+    <div class="elements" id="elements-list"></div>
+  </section>
+
+  <!-- المواد -->
+  <section id="materials">
+    <div class="band"><h2>المواد وأوراق العمل</h2></div>
+    <div id="materials-list"></div>
+  </section>
+
+  <!-- الشهادات -->
+  <section id="certificates">
+    <div class="band"><h2>الشهادات والدورات</h2></div>
+    <div class="subject-block">
+      <div class="files" data-folder="certificates" data-title="الشهادات والدورات"></div>
+    </div>
+  </section>
+
+  <!-- المشاركة -->
+  <section id="share">
+    <div class="band"><h2>رمز الملف</h2></div>
+    <div class="share">
+      <div id="qr" aria-label="رمز QR لرابط الملف"></div>
+      <div class="share-text">
+        <p>امسح الرمز بكاميرا الجوال لفتح ملف الإنجاز.</p>
+        <p class="url" id="site-url"></p>
+        <p><button class="btn ghost" type="button" id="copy-link">نسخ الرابط</button>
+           <a class="btn ghost" id="qr-download" download="رمز-ملف-الإنجاز.png" href="#">حفظ الرمز صورة</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>ملف إنجاز المعلم عبدالله ناصر عايض القرني</footer>
+
+<div class="adminbar" role="region" aria-label="وضع المعلم">
+  <div class="in">
+    <p id="admin-msg">وضع المعلم مفعّل: أزرار الرفع تظهر لك وحدك، ولا يراها الزوار.</p>
+    <button class="btn" type="button" id="refresh">تحديث الشواهد</button>
+    <button class="btn ghost" type="button" id="exit-admin">إنهاء وضع المعلم</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+/* ==========================================================
+   الإعدادات: لا تحتاج إلى تعديلها
+   ========================================================== */
+const CONFIG = {
+  owner: '9a7er1-ui',
+  repo: 'portfolio',
+  branch: 'main',
+  siteUrl: 'https://9a7er1-ui.github.io/portfolio/'
+};
+
+const ELEMENTS = [
+  { folder:'01-duties',      title:'أداء الواجبات الوظيفية',
+    hint:'أمثلة: الالتزام بالدوام، تنفيذ الحصص وحصص الانتظار، المناوبة والإشراف، المشاركة في اللجان.' },
+  { folder:'02-community',   title:'التفاعل مع المجتمع المهني',
+    hint:'أمثلة: مجتمعات التعلم المهنية، تبادل الزيارات، الدروس التطبيقية، المشاركة في اللقاءات وورش العمل.' },
+  { folder:'03-parents',     title:'التفاعل مع أولياء الأمور',
+    hint:'أمثلة: رسائل التواصل، اجتماعات أولياء الأمور، إشعارات مستوى الطالب (بعد إخفاء الأسماء).' },
+  { folder:'04-strategies',  title:'التنويع في استراتيجيات التدريس',
+    hint:'أمثلة: دروس بالتعلم التعاوني، العصف الذهني، الخرائط الذهنية، التعلم باللعب، التلقين والعرض في التلاوة.' },
+  { folder:'05-results',     title:'تحسين نتائج المتعلمين',
+    hint:'أمثلة: خطط علاجية وإثرائية، برامج دعم المتعثرين في التلاوة والحفظ، مقارنة النتائج قبل البرنامج وبعده.' },
+  { folder:'06-planning',    title:'إعداد وتنفيذ خطة التعلم',
+    hint:'أمثلة: الخطة الفصلية، توزيع المنهج، تحضير الدروس، خطط الحفظ والمراجعة.' },
+  { folder:'07-technology',  title:'توظيف تقنيات ووسائل التعلم المناسبة',
+    hint:'أمثلة: منصة مدرستي، العروض التقديمية، المصحف الإلكتروني، المقاطع التعليمية، الوسائل المحسوسة.' },
+  { folder:'08-environment', title:'تهيئة البيئة التعليمية',
+    hint:'أمثلة: تنظيم الفصل، الركن القرآني، اللوحات التحفيزية، بيئة صفية آمنة (صور بلا وجوه طلاب).' },
+  { folder:'09-classroom',   title:'الإدارة الصفية',
+    hint:'أمثلة: قواعد الصف، لوحة التعزيز، خطة تعديل السلوك، تنظيم وقت الحصة.' },
+  { folder:'10-analysis',    title:'تحليل نتائج المتعلمين وتشخيص مستوياتهم',
+    hint:'أمثلة: تحليل نتائج الاختبارات، الرسوم البيانية، الاختبارات التشخيصية. احذف أسماء الطلاب ودرجاتهم الفردية.' },
+  { folder:'11-assessment',  title:'تنوع أساليب التقويم',
+    hint:'أمثلة: اختبارات قصيرة، سلالم التقدير للتلاوة، التقويم الذاتي، أوراق العمل، ملفات الأعمال.' }
+];
+
+const MATERIALS = [
+  { folder:'materials/quran',       title:'القرآن الكريم' },
+  { folder:'materials/islamic',     title:'الدراسات الإسلامية' },
+  { folder:'materials/tajweed',     title:'التجويد' },
+  { folder:'materials/life-skills', title:'المهارات الحياتية' }
+];
+
+/* ========================================================== */
+const IGNORE = /^(readme\.md|\.gitkeep|\.keep|\.ds_store|index\.html)$/i;
+const IMG = ['jpg','jpeg','png','gif','webp'];
+const arNum = n => Number(n).toLocaleString('ar-SA');
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const encPath = p => p.split('/').map(encodeURIComponent).join('/');
+const gh = path => `https://github.com/${CONFIG.owner}/${CONFIG.repo}/${path}`;
+
+/* ---------- وضع المعلم ---------- */
+const params = new URLSearchParams(location.search);
+let admin = false;
+try {
+  if (params.has('admin')) localStorage.setItem('pf-admin','1');
+  admin = localStorage.getItem('pf-admin') === '1';
+} catch(e) { admin = params.has('admin'); }
+if (admin) document.body.classList.add('admin');
+
+document.getElementById('exit-admin').addEventListener('click', () => {
+  try { localStorage.removeItem('pf-admin'); } catch(e) {}
+  location.href = location.pathname;
+});
+document.getElementById('refresh').addEventListener('click', () => load(true));
+
+/* ---------- بناء الأقسام ---------- */
+const marker = n => `<span class="marker" aria-hidden="true"><svg viewBox="0 0 46 46"><g fill="none" stroke="currentColor" stroke-width="1.4"><rect x="10" y="10" width="26" height="26"/><rect x="10" y="10" width="26" height="26" transform="rotate(45 23 23)"/><circle cx="23" cy="23" r="10"/></g></svg><b>${arNum(n)}</b></span>`;
+
+document.getElementById('elements-list').innerHTML = ELEMENTS.map((e,i) => `
+  <details class="el">
+    <summary>
+      ${marker(i+1)}
+      <span class="el-title">${esc(e.title)}</span>
+      <span class="count" data-count-for="${e.folder}"></span>
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+    <div class="el-body">
+      <p class="hint">${esc(e.hint)}</p>
+      <div class="files" data-folder="${e.folder}" data-title="${esc(e.title)}"></div>
+    </div>
+  </details>`).join('');
+
+document.getElementById('materials-list').innerHTML = MATERIALS.map(m => `
+  <div class="subject-block">
+    <h3>${esc(m.title)}</h3>
+    <div class="files" data-folder="${m.folder}" data-title="${esc(m.title)}"></div>
+  </div>`).join('');
+
+/* ---------- قراءة المجلدات من GitHub ---------- */
+let state = { dirs:new Set(), files:new Map(), error:null };
+
+function kindOf(ext){
+  if (ext === 'pdf') return 'PDF';
+  if (IMG.includes(ext) || ext === 'heic') return 'صورة';
+  if (['mp4','mov','m4v','webm'].includes(ext)) return 'فيديو';
+  if (['mp3','m4a','wav','aac'].includes(ext)) return 'صوت';
+  if (['doc','docx','pages'].includes(ext)) return 'Word';
+  if (['ppt','pptx','key'].includes(ext)) return 'عرض';
+  if (['xls','xlsx','numbers'].includes(ext)) return 'جدول';
+  return ext ? ext.toUpperCase() : 'ملف';
+}
+
+function parseTree(tree){
+  const dirs = new Set(), files = new Map();
+  for (const item of tree){
+    if (item.type === 'tree') { dirs.add(item.path); continue; }
+    if (item.type !== 'blob') continue;
+    const cut = item.path.lastIndexOf('/');
+    if (cut < 0) continue;
+    const dir = item.path.slice(0,cut), name = item.path.slice(cut+1);
+    if (IGNORE.test(name) || name.startsWith('.')) continue;
+    const dot = name.lastIndexOf('.');
+    const ext = dot > 0 ? name.slice(dot+1).toLowerCase() : '';
+    const title = (dot > 0 ? name.slice(0,dot) : name).replace(/_/g,' ').trim();
+    if (!files.has(dir)) files.set(dir, []);
+    files.get(dir).push({ path:item.path, title, ext });
+  }
+  for (const list of files.values())
+    list.sort((a,b) => a.title.localeCompare(b.title,'ar',{numeric:true}));
+  return { dirs, files, error:null };
+}
+
+async function load(force){
+  document.querySelectorAll('.files').forEach(el => el.innerHTML = '<p class="status">جارٍ تحميل الشواهد…</p>');
+  const key = 'pf-tree', useCache = !admin && !force;
+  try {
+    if (useCache){
+      const c = JSON.parse(sessionStorage.getItem(key) || 'null');
+      if (c && Date.now() - c.t < 5*60*1000){ state = parseTree(c.tree); render(); return; }
+    }
+  } catch(e) {}
+  try {
+    const url = `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/git/trees/${CONFIG.branch}?recursive=1&t=${Date.now()}`;
+    const res = await fetch(url, { headers:{ 'Accept':'application/vnd.github+json' }, cache:'no-store' });
+    if (res.status === 409) { state = parseTree([]); }
+    else if (!res.ok) { state = { dirs:new Set(), files:new Map(), error:res.status }; }
+    else {
+      const data = await res.json();
+      state = parseTree(data.tree || []);
+      try { sessionStorage.setItem(key, JSON.stringify({ t:Date.now(), tree:data.tree || [] })); } catch(e) {}
+    }
+  } catch(e) { state = { dirs:new Set(), files:new Map(), error:'net' }; }
+  render();
+}
+
+/* ---------- العرض ---------- */
+function errorText(){
+  if (state.error === 403 || state.error === 429)
+    return 'تعذّر تحميل الشواهد الآن لكثرة الطلبات من هذه الشبكة. أعد فتح الصفحة بعد قليل.';
+  if (state.error === 404)
+    return admin ? 'لم يُعثر على المستودع. تأكد أن اسمه portfolio وأنه عام (Public).' : 'تعذّر تحميل الشواهد. أعد المحاولة لاحقاً.';
+  return 'تعذّر تحميل الشواهد. تحقق من الاتصال بالإنترنت ثم أعد فتح الصفحة.';
+}
+
+function itemHTML(f){
+  const href = encPath(f.path);
+  let thumb = `<span class="thumb">${esc(kindOf(f.ext))}</span>`;
+  if (IMG.includes(f.ext)){
+    const raw = `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/${encPath(f.path)}`;
+    thumb = `<span class="thumb"><img src="${raw}" alt="" loading="lazy" onerror="this.parentNode.textContent='صورة'"></span>`;
+  }
+  return `<li><a href="${href}" target="_blank" rel="noopener">${thumb}<span class="ev-name">${esc(f.title)}</span></a></li>`;
+}
+
+function toolsHTML(folder, title){
+  if (state.error) return '';
+  if (!state.dirs.has(folder)){
+    const url = gh(`new/${CONFIG.branch}?filename=${encodeURIComponent(folder + '/README.md')}&value=${encodeURIComponent('مجلد: ' + title)}`);
+    return `<div class="tools"><a class="btn gold" href="${url}">إنشاء المجلد (مرة واحدة)</a></div>`;
+  }
+  return `<div class="tools">
+    <a class="btn" href="${gh(`upload/${CONFIG.branch}/${encPath(folder)}`)}">رفع شاهد</a>
+    <a class="btn ghost" href="${gh(`tree/${CONFIG.branch}/${encPath(folder)}`)}">إدارة الملفات</a>
+  </div>`;
+}
+
+function render(){
+  let total = 0, made = 0, needed = 0;
+  document.querySelectorAll('.files').forEach(el => {
+    const folder = el.dataset.folder, title = el.dataset.title;
+    const list = state.files.get(folder) || [];
+    needed++; if (state.dirs.has(folder)) made++;
+    if (/^\d\d-/.test(folder)) total += list.length;
+    let html;
+    if (state.error) html = `<p class="status">${errorText()}</p>`;
+    else if (list.length) html = `<ul class="ev">${list.map(itemHTML).join('')}</ul>`;
+    else html = `<p class="empty">لم تُضف شواهد في هذا القسم بعد.</p>`;
+    el.innerHTML = html + (admin ? toolsHTML(folder, title) : '');
+  });
+  document.querySelectorAll('[data-count-for]').forEach(el => {
+    const n = (state.files.get(el.dataset.countFor) || []).length;
+    el.textContent = state.error ? '' : (n ? `${arNum(n)} شاهد` : 'لا شواهد');
+  });
+  if (!state.error)
+    document.getElementById('elements-lead').textContent =
+      `اضغط على أي عنصر لعرض شواهده. مجموع الشواهد: ${arNum(total)}.`;
+  if (admin){
+    const msg = document.getElementById('admin-msg');
+    if (state.error) msg.textContent = errorText();
+    else if (made < needed)
+      msg.textContent = `وضع المعلم: أنشأت ${arNum(made)} من ${arNum(needed)} مجلداً. اضغط «إنشاء المجلد» في الأقسام الباقية.`;
+    else
+      msg.textContent = 'وضع المعلم: كل المجلدات جاهزة. الملف المرفوع يظهر بعد «تحديث الشواهد»، ويفتح بعد دقيقة أو دقيقتين.';
+  }
+}
+
+/* ---------- رمز QR والرابط ---------- */
+document.getElementById('site-url').textContent = CONFIG.siteUrl.replace('https://','');
+try {
+  new QRCode(document.getElementById('qr'), { text:CONFIG.siteUrl, width:360, height:360,
+    colorDark:'#0d3b33', colorLight:'#ffffff', correctLevel:QRCode.CorrectLevel.M });
+  setTimeout(() => {
+    const c = document.querySelector('#qr canvas');
+    if (c) document.getElementById('qr-download').href = c.toDataURL('image/png');
+  }, 300);
+} catch(e) {
+  document.getElementById('qr').textContent = 'تعذّر إنشاء الرمز. أعد فتح الصفحة.';
+}
+document.getElementById('qr-download').addEventListener('click', ev => {
+  if (document.getElementById('qr-download').getAttribute('href') === '#') ev.preventDefault();
+});
+document.getElementById('copy-link').addEventListener('click', async ev => {
+  try { await navigator.clipboard.writeText(CONFIG.siteUrl); ev.target.textContent = 'نُسخ الرابط'; }
+  catch(e) { prompt('انسخ الرابط:', CONFIG.siteUrl); }
+});
+
+load(false);
+</script>
+</body>
+</html>
